@@ -1,0 +1,141 @@
+/* === PRINCIPAL === */
+
+/* --- NAVEGAÇÃO --- */
+
+.nav-especialidades {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav-especialidades a {
+    text-decoration: none;
+    color: #000000;
+    border-bottom: 2px solid #2fcfcf;
+    font-size: 18px;
+    margin: auto 8px;
+    padding-bottom: 2px;
+}
+
+.nav-especialidades a:hover {
+    color: #177777;
+}
+
+/* --- ESPECIALIDADES --- */
+
+.especialidades h1 {
+    text-align: center;
+    color: #686868;
+    font-size: 27px;
+    margin: 15px auto;
+}
+
+.texto-especialidades {
+    max-width: 512px;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.texto-especialidades h2 {
+    color: #7a7a7a;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.texto-especialidades p {
+    color: #888888;
+    font-size: 17px;
+}
+
+/* -- Tabela Especialidades -- */
+
+.tabela-especialidades {
+    display: flex;
+    height: 240px;
+    padding: 0 20px;
+}
+
+.tabela-especialidades img {
+    width: 30%;
+    height: 100%;
+}
+
+.tabela {
+    border-spacing: 0;
+    text-align: left;
+    width: 70%;
+    height: 100%;
+    display: flex;
+}
+
+.tabela thead tr {
+    background-color: #00cad1;
+    color: #fff;
+}
+
+.tabela tr {
+    background-color: #f1f1f1;
+    color: #585757;
+    font-weight: 500;
+}
+
+.tabela tbody tr:nth-of-type(2n+1) {
+    background-color: #cdcdcd;
+    border: 1px solid #f1f1f1;
+}
+
+.tabela th,
+.tabela td {
+    padding: 5px;
+    padding-right: 70px;
+}
+
+#fisioterapia .tabela th,
+#geriatria .tabela th {
+    padding-right: 135px;
+}
+
+#pediatria .tabela th {
+    padding-right: 115px;
+}
+
+.rodape {
+    margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+
+    .tabela-especialidades img {
+        display: none;
+    }
+
+    .tabela {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 620px) {
+
+    #fisioterapia .tabela th,
+    #geriatria .tabela th,
+    #pediatria .tabela th {
+        padding-right: 0;
+    }
+
+    .tabela th,
+    .tabela td {
+        padding-right: 0;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .tabela th {
+        padding: 0;
+    }
+}

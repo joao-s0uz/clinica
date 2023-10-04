@@ -1,0 +1,347 @@
+/* === ESTILOS GLOBAIS === */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.limita-secao {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* === TOPO === */
+
+.topo {
+    background-color: #2fcfcf;
+}
+
+.topo .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-topo img {
+    width: 150px;
+    margin-left: 10px;
+}
+
+.links-topo {
+    margin-right: 10px;
+}
+
+.links-topo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin: auto 5px;
+}
+
+.links-topo a:hover {
+    color: #313131;
+}
+
+/* === PRINCIPAL === */
+
+/* --- BANNER --- */
+.banner {
+    background-image: url("../assets/recepcao.png");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.banner div {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 30px;
+}
+
+.banner h1 {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* --- SOBRE --- */
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-principal {
+    margin: 0 auto;
+    text-align: center;
+    margin: 60px auto 20px;
+}
+
+.texto-principal h2 {
+    color: #575757;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.lista-sobre {
+    display: flex;
+    justify-content: space-around;
+}
+
+.lista-sobre h4 {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 40px auto 15px;
+    color: #3d3d3d;
+}
+
+.lista-sobre li {
+    line-height: 34px;
+    margin-left: 50px;
+    font-size: 18px;
+    color: #707070;
+}
+
+.lista-sobre img {
+    width: 250px;
+}
+
+/* --- ESPECIALIDADES --- */
+
+.texto-principal h3 {
+    font-size: 24px;
+    color: #575757;
+    margin-bottom: 20px;
+}
+
+.texto-principal p {
+    color: #707070;
+    font-size: 19px;
+}
+
+.card-especialidades {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 1px #acacac;
+}
+
+.card figcaption {
+    padding: 10px;
+    text-transform: uppercase;
+    color: #575757;
+    font-size: 17px;
+}
+
+.card img {
+    width: 300px;
+    border-radius: 5px 5px 0 0;
+}
+
+.botao-horario {
+    margin: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.botao-horario a {
+    background-color: #2fcfcf;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+}
+
+.botao-horario a:hover {
+    background-color: #14a5a5;
+}
+
+/* --- CONTATO --- */
+
+.contato .texto-principal p {
+    margin-bottom: 30px;
+}
+
+.mapa {
+    margin-bottom: 50px;
+}
+
+/* --- RODAPE --- */
+.rodape {
+    background-color: #0c6161;
+    color: #e9e9e9;
+}
+
+.texto-rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.texto-rodape p {
+    margin: 10px auto 20px;
+    font-size: 18px;
+}
+
+.rodape-logo img {
+    width: 150px;
+    margin-top: 25px;
+}
+
+@media (max-width: 1024px) {
+
+    banner {
+        background-image: url("../assets/recepcao.png");
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+    }
+
+    .banner div {
+        font-size: 27px;
+        margin-left: 10px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .banner {
+        background-image: url("../assets/recepcao.png");
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+    }
+
+    .banner div {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+    .banner div h1 {
+        font-weight: 400;
+    }
+
+    .lista-sobre img {
+        display: none;
+    }
+
+    .lista-sobre h4 {
+        margin: 20px auto 15px;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    /* === TOPO === */
+
+    .topo .container {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .logo-topo {
+        width: 90%;
+        border-bottom: 2px solid #129797;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .links-topo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+    }
+
+    .links-topo a {
+        margin: auto 20px;
+    }
+
+    /* === PRINCIPAL === */
+
+    /* --- BANNER --- */
+
+    .banner {
+        background-image: url("../assets/recepcao.png");
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+    }
+
+    .banner div {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    .banner div h1 {
+        font-weight: 400;
+    }
+
+    /* --- SOBRE ---*/
+
+    .texto-principal {
+        margin-top: 40px;
+    }
+
+    .texto-principal h2 {
+        font-size: 23px;
+    }
+
+    .texto-principal h3 {
+        font-size: 20px;
+    }
+
+    .texto-principal p {
+        font-size: 17px;
+    }
+
+    .lista-sobre {
+        text-align: center;
+    }
+
+    .lista-sobre img {
+        display: none;
+    }
+
+    .lista-sobre h4 {
+        font-size: 19px;
+        margin: 10px auto 20px;
+    }
+
+    .lista-sobre li {
+        font-size: 17px;
+        text-align: left;
+    }
+
+    /* === RODAPE === */
+
+    .rodape {
+        text-align: center;
+    }
+
+    .texto-rodape p {
+        font-size: 17px;
+    }
+
+}
